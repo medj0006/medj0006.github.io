@@ -16,4 +16,19 @@ h1,h2,h3{
 }
 section p{
     border: 2px solid black;
+
+}
+/*using id to target an element */
+#aboutus{
+    background-color: azure;
+}
+/*using class to target an element */
+.imp-para{
+    /*text-transform:uppercase;*/
+    background-color: gold
+    (41, 10, 21);
+    color: gold;
+}
+section ul li:nth-child(odd){
+    background-color: lightblue;
 }
