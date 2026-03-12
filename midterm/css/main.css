@@ -1,0 +1,168 @@
+/* GENERAL PAGE STYLE */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f0f8ff; /* icy light blue background */
+}
+
+/* PAGE WRAPPER */
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #e6f7ff; /* soft winter blue */
+    border: 1px solid #cceeff; /* subtle border */
+}
+
+/* HEADER */
+.site-header {
+    position: relative;
+}
+
+.site-header img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* TITLE ON TOP OF HEADER IMAGE */
+.site-header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* shadow for readability */
+}
+
+/* NAVIGATION */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #b3e5fc; /* wintery navigation bar */
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    border-right: 1px solid #81d4fa;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #01579b;
+    display: block;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    background-color: #81d4fa;
+    color: white;
+    transition: 0.3s;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 20px;
+}
+
+/* ARTICLE IMAGE WITH TEXT WRAP */
+article img {
+    float: left;
+    width: 180px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* CLEAR FLOAT AFTER ARTICLE */
+article::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* FACTS SECTION */
+.facts {
+    background-color: #fff9f9; /* light snowy background */
+    padding: 15px;
+    margin-top: 20px;
+    border-left: 5px solid #81d4fa; /* wintery accent */
+}
+
+/* FORM */
+form {
+    border: 1px solid #81d4fa;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+}
+
+/* LABELS */
+form label {
+    margin-top: 10px;
+    display: block;
+    color: #01579b;
+}
+
+/* TEXT INPUTS */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #81d4fa;
+    border-radius: 3px;
+}
+
+/* TEXTAREA HEIGHT */
+textarea {
+    height: 120px;
+}
+
+/* RADIO BUTTONS HORIZONTAL */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="radio"]+label {
+    display: inline;
+    margin-right: 15px;
+    color: #01579b;
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"] {
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #0277bd;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #b3e5fc;
+    color: #01579b;
+    font-weight: bold;
+}
