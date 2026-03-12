@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ocean World</title>
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- HEADER : Image with title positioned on top -->
+        <header class="site-header">
+            <img src="images/ocean1.Jpg" alt="Ocean Header">
+            <h1>Ocean World</h1>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>STORY</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <!-- ARTICLE : Image with text wrapping -->
+            <article>
+
+                <h2>Life in the Ocean</h2>
+
+                <img src="images/ocean2.Jpg" alt="Sea Turtle">
+
+                <p>
+                    The ocean is home to millions of species and is one of the most important ecosystems on Earth.
+                    Marine animals such as turtles, dolphins, and coral reefs create a rich and diverse environment.
+                </p>
+
+                <p>
+                    Scientists continue to explore the oceans to discover new species and understand how marine life
+                    affects our planet. Protecting oceans is essential for the future of Earth.
+                </p>
+
+            </article>
+
+            <!-- FACTS : Proper list syntax -->
+            <section class="facts">
+
+                <h2>Interesting Ocean Facts</h2>
+
+                <ul>
+                    <li>Oceans cover more than 70% of Earth.</li>
+                    <li>The Pacific Ocean is the largest ocean.</li>
+                    <li>More than 200,000 marine species have been identified.</li>
+                    <li>Coral reefs support thousands of ocean animals.</li>
+                </ul>
+
+            </section>
+
+            <!-- CONTACT FORM -->
+            <section>
+
+                <h2>Contact Us</h2>
+
+                <form>
+
+                    <!-- Name input -->
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <!-- Email input -->
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <!-- Message textarea -->
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <!-- Radio question -->
+                    <p>Would you like to visit the ocean?</p>
+
+                    <input type="radio" id="yes" name="visit" value="yes">
+                    <label for="yes">Yes</label>
+
+                    <input type="radio" id="no" name="visit" value="no">
+                    <label for="no">No</label>
+
+                    <input type="radio" id="maybe" name="visit" value="maybe">
+                    <label for="maybe">Maybe</label>
+
+                    <br><br>
+
+                    <!-- Submit button -->
+                    <input type="submit" value="SEND">
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© Ocean World</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
