@@ -1,1 +1,207 @@
+/* ================= RESET ================= */
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Base styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+}
+
+/* ================= CONTAINER ================= */
+/* Keeps content centered while background stretches full width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ================= HEADER ================= */
+header, footer {
+    background: #222;
+    color: white;
+}
+
+/* 
+    HEADER LAYOUT TASK:
+    Convert this into a flex container
+    Align logo and navigation properly
+    Stack vertically on mobile
+*/
+.header-flex {
+    
+    padding: 1rem;
+}
+
+/* Logo styling */
+.logo {
+    font-family: "Combo", cursive;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+/* ================= NAVIGATION ================= */
+
+/*
+    NAVIGATION TASK:
+    Turn this into a flex container
+    Stack items vertically on mobile
+    Change to row on desktop (media query below)
+*/
+.nav-links {
+    list-style: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover state */
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Focus state */
+.nav-links a:focus,
+.nav-links a:focus-visible {
+    outline: 2px solid #ffcc00;
+    outline-offset: 3px;
+}
+
+/* ================= HERO ================= */
+.banner {
+    background: url("https://plus.unsplash.com/premium_vector-1711987353813-68a5bdb6f207?q=80&w=2340&auto=format&fit=crop") no-repeat center/cover;
+
+    min-height: 60vh;
+
+    /*
+        HERO CENTERING TASK:
+        Use Flexbox to center content
+        Align both vertically and horizontally
+    */
+
+    text-align: center;
+    color: white;
+}
+
+.banner-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+}
+
+/* ================= TOPICS ================= */
+.topics {
+    background: #f4f4f4;
+    padding: 3rem 0;
+}
+
+/*
+    CARD LAYOUT TASK:
+    Make cards sit in a flexible layout
+    Stack on mobile
+    Row layout on desktop
+    Add spacing between items
+*/
+.topics-flex {
+   
+}
+
+/* ================= CARD ================= */
+.card {
+    background: white;
+    padding: 1rem;
+
+    /*
+        CARD INTERNAL LAYOUT:
+        Use Flexbox for vertical spacing
+        Push button to bottom if needed
+    */
+
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+    text-decoration: none;
+    background: #333;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+
+    /*
+        BUTTON ALIGNMENT TASK (optional improvement):
+        You may use margin or flex alignment inside card
+    */
+
+    
+
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+.btn:focus,
+.btn:focus-visible {
+    outline: 3px solid #ffcc00;
+    outline-offset: 3px;
+}
+
+/* ================= FOOTER ================= */
+footer p, h2 {
+    padding: 1rem;
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 760px) {
+
+    /*
+        HEADER DESKTOP TASK:
+        Switch layout from column to row
+        Space out logo and nav
+        Center align items vertically
+    */
+    .header-flex {
+        
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    /*
+        NAV DESKTOP TASK:
+        Switch nav from column to row
+        Add spacing between items
+    */
+    .nav-links {
+        
+        padding: 0;
+    }
+
+    /*
+        TOPICS DESKTOP TASK:
+        Cards should appear in a row
+        Each card should grow evenly
+    */
+    .topics-flex {
+       
+    }
+
+    .card {
+        
+    }
+}
